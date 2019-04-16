@@ -33,11 +33,6 @@ Param (
 	[Parameter(Mandatory = $False)]
 	[string]$HighDeviceCount = '15'
 )
-
-#Connect to MsolService
-$UserCredential = Get-Credential
-Connect-MsolService -Credential $UserCredential
-
 #Initialize Array to hold users and number of devices
 $DeviceCountHigh = @()
 
